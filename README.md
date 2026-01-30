@@ -9,7 +9,7 @@ Purpose
 
 Where to get help
 - Public issues (preferred): Open an issue in this repository’s Issues tab: https://github.com/ishirley34/lottoledger-support/issues
-- Email (private): If you must share logs or data that cannot be posted publicly, email support@lottoledger.example (replace with our real support email) and reference the issue number (if any).
+- Email (private): If you must share logs or data that cannot be posted publicly, email hazzaadev@gmail.com and reference the issue number (if any).
 - For urgent security vulnerabilities: see the "Security / Vulnerability reports" section below.
 
 How to open a useful support issue
@@ -51,7 +51,7 @@ Privacy and sensitive data
 
 Security / Vulnerability reports
 - Do NOT post security vulnerabilities in public issues.
-- To report a security vulnerability, email security@lottoledger.example (replace with our real security contact) with:
+- To report a security vulnerability, email hazzaadev@gmail.com with:
   - Short description of the issue
   - Reproduction steps (or PoC), if possible
   - Your preferred secure contact method
@@ -108,7 +108,7 @@ Helpful links
 Contact / maintainers
 - Primary maintainers: LottoLedger Team (ishirley34)
 - Public support issues: https://github.com/ishirley34/lottoledger-support/issues
-- Private contact / escalation: support@lottoledger.example (replace with real address)
-- Security reports: security@lottoledger.example (replace with real address)
+- Private contact / escalation: hazzaadev@gmail.com
+- Security reports: hazzaadev@gmail.com
 
 Thanks for helping make LottoLedger better — we appreciate clear bug reports and thoughtful feedback.
