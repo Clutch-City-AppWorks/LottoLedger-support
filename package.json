@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "echo \"Deployment is handled by GitHub Actions. Use 'npm run deploy:manual' for manual or testing deployments.\"",
+    "deploy:manual": "gh-pages -d dist"
   },
   "keywords": [
     "lottoledger",
