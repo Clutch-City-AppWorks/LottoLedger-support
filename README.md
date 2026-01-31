@@ -112,3 +112,64 @@ Contact / maintainers
 - Security reports: security@lottoledger.example (replace with real address)
 
 Thanks for helping make LottoLedger better — we appreciate clear bug reports and thoughtful feedback.
+
+## Publishing with GitHub Pages
+
+This repository is configured to deploy to GitHub Pages automatically using GitHub Actions. The deployment workflow builds the Vite site and publishes the `dist/` folder to the `gh-pages` branch.
+
+### How it works
+
+1. **Automatic deployment**: Every push to the `main` branch triggers the GitHub Actions workflow (`.github/workflows/deploy-pages.yml`), which builds the site and deploys it to GitHub Pages.
+
+2. **Manual deployment**: You can also deploy manually using npm scripts:
+   ```bash
+   npm install        # Install dependencies (first time only)
+   npm run deploy     # Build and deploy to gh-pages branch
+   ```
+
+### Base URL configuration
+
+The site's base URL is controlled by the `VITE_BASE` environment variable in `vite.config.js`:
+
+- **Organization site** (e.g., `https://Clutch-City-AppWorks.github.io/`):
+  - Repository must be named `Clutch-City-AppWorks.github.io`
+  - Use `base: '/'` (default setting)
+  - Site is accessible at the organization's root domain
+
+- **Project site** (e.g., `https://Clutch-City-AppWorks.github.io/LottoLedger-support/`):
+  - Repository can have any name (e.g., `LottoLedger-support`)
+  - Set `VITE_BASE=/LottoLedger-support/` when building
+  - Site is accessible at `https://Clutch-City-AppWorks.github.io/LottoLedger-support/`
+
+To override the base URL for a build:
+```bash
+VITE_BASE=/LottoLedger-support/ npm run build
+```
+
+### Custom domain setup (optional)
+
+If you want to use a custom domain (e.g., `support.lottoledger.com`):
+
+1. Add a `CNAME` file to the `public/` directory containing your custom domain
+2. Configure DNS records with your domain provider:
+   - For apex domain: Add A records pointing to GitHub's IPs
+   - For subdomain: Add a CNAME record pointing to `Clutch-City-AppWorks.github.io`
+3. Enable "Enforce HTTPS" in the repository's Pages settings after DNS propagates
+
+See [GitHub's custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) for detailed instructions.
+
+### GitHub Pages settings
+
+After the first successful deployment, verify these settings in the repository:
+
+1. Go to **Settings** → **Pages**
+2. Ensure **Source** is set to "Deploy from a branch"
+3. Select branch: `gh-pages` and folder: `/ (root)`
+4. The site URL will be displayed at the top of the Pages settings
+
+### Troubleshooting
+
+- If deployment fails, check the Actions tab for workflow run logs
+- Ensure the repository has GitHub Pages enabled in Settings
+- For organization sites, verify the repository name matches `Clutch-City-AppWorks.github.io`
+- For project sites, ensure the base URL is correctly configured
