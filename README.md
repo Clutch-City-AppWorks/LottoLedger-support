@@ -112,3 +112,134 @@ Contact / maintainers
 - Security reports: security@lottoledger.example (replace with real address)
 
 Thanks for helping make LottoLedger better — we appreciate clear bug reports and thoughtful feedback.
+
+---
+
+## GitHub Pages Deployment
+
+This repository is configured to automatically deploy to GitHub Pages. The site is built using Vite and deployed via GitHub Actions.
+
+### Deployment Process
+
+The site automatically deploys when changes are pushed to the `main` branch:
+
+1. The GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) is triggered
+2. Dependencies are installed and the site is built using `npm run build`
+3. The built site (from the `dist/` folder) is deployed to GitHub Pages
+
+### Published Site URLs
+
+The site URL depends on whether this is configured as an **organization site** or a **project site**:
+
+#### Option 1: Organization Site
+- **Repository name**: `Clutch-City-AppWorks.github.io` (must match this exactly)
+- **Published URL**: `https://clutch-city-appworks.github.io/`
+- **Base path setting**: Set `VITE_BASE=/` in the workflow or environment
+
+#### Option 2: Project Site (Current Default)
+- **Repository name**: `LottoLedger-support` (or any name)
+- **Published URL**: `https://clutch-city-appworks.github.io/LottoLedger-support/`
+- **Base path setting**: `VITE_BASE=/LottoLedger-support/` (default in vite.config.js)
+
+### Configuring the Base Path
+
+The base path in `vite.config.js` determines how assets are referenced. It can be configured in three ways:
+
+1. **Default (in vite.config.js)**: Currently set to `/LottoLedger-support/` for project site
+2. **Environment variable**: Set `VITE_BASE` when building:
+   ```bash
+   export VITE_BASE=/
+   npm run build
+   ```
+3. **GitHub Actions variable**: Set repository variable `VITE_BASE` in Settings → Secrets and variables → Actions → Variables
+
+### Enabling GitHub Pages
+
+After merging this PR, complete these steps to enable GitHub Pages:
+
+1. **Go to Repository Settings**:
+   - Navigate to `Settings` → `Pages`
+
+2. **Choose your deployment type**:
+   
+   **For Organization Site** (if you want the main org page):
+   - Rename this repository to `Clutch-City-AppWorks.github.io` in Settings → General
+   - In Settings → Pages, select source: `GitHub Actions`
+   - Ensure `vite.config.js` base is set to `/` (or set `VITE_BASE=/` in workflow)
+   
+   **For Project Site** (current configuration):
+   - Keep repository name as `LottoLedger-support`
+   - In Settings → Pages, select source: `GitHub Actions`
+   - The default base path `/LottoLedger-support/` is already configured
+
+3. **Trigger deployment**:
+   - Push any change to the `main` branch, or
+   - Manually re-run the workflow from Actions tab
+
+4. **Verify deployment**:
+   - Check the Actions tab to see the workflow run
+   - Once complete, visit your published URL
+   - Verify that styles and assets load correctly (check browser console)
+
+### Custom Domain (Optional)
+
+To use a custom domain:
+
+1. **Add CNAME file**:
+   - Create a file named `CNAME` in the project root (not in `public/`)
+   - Add your custom domain on a single line: `support.yourdomain.com`
+   - Commit and push to trigger deployment
+
+2. **Configure DNS**:
+   - Add a CNAME record pointing to `clutch-city-appworks.github.io`
+   - Or for apex domain, add A records to GitHub's IP addresses
+
+3. **Update GitHub Settings**:
+   - Go to Settings → Pages
+   - Enter your custom domain in the "Custom domain" field
+   - Check "Enforce HTTPS" once DNS propagates
+
+### Local Development
+
+To run the site locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server (with HMR)
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### Manual Deployment (Optional)
+
+While the GitHub Actions workflow handles automatic deployment, you can also deploy manually:
+
+```bash
+# Build and deploy to gh-pages branch (legacy method)
+npm run deploy
+```
+
+Note: The automated GitHub Actions deployment is recommended over manual deployment.
+
+### Troubleshooting
+
+**Assets not loading (404 errors)**:
+- Check that the base path matches your deployment type (org vs project site)
+- Verify the `VITE_BASE` environment variable is set correctly
+- Clear browser cache and hard reload
+
+**Workflow fails**:
+- Check the Actions tab for error details
+- Ensure Pages is enabled in repository settings
+- Verify Node.js version compatibility (requires Node 18+)
+
+**Wrong URL**:
+- Organization sites require exact repository name: `Clutch-City-AppWorks.github.io`
+- Project sites use format: `https://clutch-city-appworks.github.io/repository-name/`
