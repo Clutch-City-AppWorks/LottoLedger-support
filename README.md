@@ -158,8 +158,9 @@ To use a custom domain (e.g., `support.lottoledger.com`):
    - Enable "Enforce HTTPS" (recommended)
 
 3. **Add CNAME file** (if needed):
-   - Create a `public/CNAME` file containing your domain name (e.g., `support.lottoledger.com`)
-   - This file will be copied to the `dist/` folder during build
+   - If it does not already exist, create a `public/` directory in the project root.
+   - Inside that directory, create a `public/CNAME` file containing your domain name (e.g., `support.lottoledger.com`).
+   - By default, Vite copies files from the `public/` directory into the `dist/` folder during build. If you have customized `publicDir` in `vite.config.js`, place the `CNAME` file in that configured directory instead so that it is included in the built site.
 
 For more information, see [GitHub's custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
 
