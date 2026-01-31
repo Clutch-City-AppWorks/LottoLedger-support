@@ -94,13 +94,14 @@ Because all data is stored locally on your device:
 - ✅ No data recovery or backup is provided by us (use iCloud or iTunes backup if desired)
 - ✅ You don't need to contact us to delete your data - just delete the app
 
-## Open Source
+## Source Code Transparency
 
-LottoLedger is open source software released under the MIT License. The source code is maintained in a private repository.
+LottoLedger's source code is maintained in a private repository. However, we are committed to transparency about our privacy practices.
 
-You can verify our privacy practices and audit the implementation by:
+You can verify our privacy-first approach by:
 - Reviewing the privacy policy documentation in this repository
-- Contacting the development team through the support channels
+- Contacting the development team through the support channels for specific privacy questions
+- Requesting detailed information about data handling practices
 
 ## App Store Privacy Questions
 
