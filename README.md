@@ -112,3 +112,71 @@ Contact / maintainers
 - Security reports: hazzaadev@gmail.com
 
 Thanks for helping make LottoLedger better — we appreciate clear bug reports and thoughtful feedback.
+
+## Publishing with GitHub Pages
+
+This repository includes automated deployment to GitHub Pages using GitHub Actions. The site is built with Vite and deployed whenever changes are pushed to the `main` branch.
+
+### How to Trigger Deployment
+
+Deployments happen automatically when:
+- Code is pushed to the `main` branch
+- A pull request is merged into `main`
+
+The workflow (`.github/workflows/deploy-pages.yml`) will:
+1. Build the Vite site
+2. Deploy the built files from the `dist/` directory to the `gh-pages` branch
+3. GitHub Pages will serve the content from the `gh-pages` branch
+
+### Base Path Configuration
+
+The site's base path is configured through the `VITE_BASE` environment variable in `vite.config.js`:
+
+**Organization Sites** (e.g., `Clutch-City-AppWorks.github.io`):
+- Repository must be named exactly `<orgname>.github.io`
+- Site deploys to: `https://<orgname>.github.io/`
+- Use `VITE_BASE=/` (default setting)
+
+**Project Sites** (e.g., `Clutch-City-AppWorks.github.io/LottoLedger-support`):
+- Can use any repository name
+- Site deploys to: `https://<orgname>.github.io/<repo-name>/`
+- Set `VITE_BASE=/<repo-name>/` in the workflow file
+
+The current configuration in `.github/workflows/deploy-pages.yml` uses `VITE_BASE=/`, which is appropriate for an organization site.
+
+### Custom Domain Setup
+
+To use a custom domain (e.g., `support.lottoledger.com`):
+
+1. **Add DNS records** at your domain provider:
+   - For apex domain (e.g., `lottoledger.com`): Create `A` records pointing to GitHub's IP addresses
+   - For subdomain (e.g., `support.lottoledger.com`): Create a `CNAME` record pointing to `<orgname>.github.io`
+
+2. **Configure in GitHub**:
+   - Go to repository Settings → Pages
+   - Under "Custom domain", enter your domain
+   - Enable "Enforce HTTPS" (recommended)
+
+3. **Add CNAME file** (if needed):
+   - If it does not already exist, create a `public/` directory in the project root.
+   - Inside that directory, create a `public/CNAME` file containing your domain name (e.g., `support.lottoledger.com`).
+   - By default, Vite copies files from the `public/` directory into the `dist/` folder during build. If you have customized `publicDir` in `vite.config.js`, place the `CNAME` file in that configured directory instead so that it is included in the built site.
+
+For more information, see [GitHub's custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+
+### Manual Deployment (Optional)
+
+While automatic deployment via GitHub Actions is recommended, you can also deploy manually:
+
+```bash
+# Install dependencies
+npm install
+
+# Build the site
+npm run build
+
+# Deploy to gh-pages branch (requires gh-pages to be installed)
+npm run deploy
+```
+
+Note: Manual deployment requires the `gh-pages` package, which is included in `devDependencies`.

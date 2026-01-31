@@ -1,0 +1,25 @@
+{
+  "name": "lottoledger-support",
+  "version": "1.0.0",
+  "description": "Support documentation and issue tracker for LottoLedger",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "echo \"Deployment is handled by GitHub Actions. Use 'npm run deploy:manual' for manual or testing deployments.\"",
+    "deploy:manual": "gh-pages -d dist"
+  },
+  "keywords": [
+    "lottoledger",
+    "support",
+    "documentation"
+  ],
+  "author": "LottoLedger Team",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "vite": "^5.0.0"
+  }
+}
