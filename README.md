@@ -1,6 +1,6 @@
 # Support for LottoLedger
 
-This repository (LottoLedger-ios) contains the public-facing support docs and issue tracker for the LottoLedger iOS project. The application source code and private development artifacts are kept in a separate private repository: [LottoLedger-ios (private)](https://github.com/ishirley34/LottoLedger-ios).
+This repository (LottoLedger-support) contains the public-facing support docs and issue tracker for the LottoLedger iOS project. The application source code and private development artifacts are kept in a separate private repository.
 
 Purpose
 - Provide a single, public place for users to ask questions, report problems, and get help.
@@ -8,7 +8,7 @@ Purpose
 - Document how to get help, what information to include, and how to request private help when necessary.
 
 Where to get help
-- Public issues (preferred): Open an issue in this repository’s Issues tab: https://github.com/ishirley34/lottoledger-support/issues
+- Public issues (preferred): Open an issue in this repository’s Issues tab: https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues
 - Email (private): If you must share logs or data that cannot be posted publicly, email support@lottoledger.example (replace with our real support email) and reference the issue number (if any).
 - For urgent security vulnerabilities: see the "Security / Vulnerability reports" section below.
 
@@ -101,13 +101,12 @@ Common support topics & quick troubleshooting
 - Login/auth issues: include exact error text and the time you attempted the login.
 
 Helpful links
-- Private project repository (source code): [LottoLedger-ios (private)](https://github.com/ishirley34/LottoLedger-ios)
-- Support issues (this repo): https://github.com/ishirley34/lottoledger-support/issues
+- Support issues (this repo): https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues
 - CONTRIBUTING (if maintained here): see this repository's CONTRIBUTING.md
 
 Contact / maintainers
-- Primary maintainers: LottoLedger Team (ishirley34)
-- Public support issues: https://github.com/ishirley34/lottoledger-support/issues
+- Primary maintainers: LottoLedger Team
+- Public support issues: https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues
 - Private contact / escalation: support@lottoledger.example (replace with real address)
 - Security reports: security@lottoledger.example (replace with real address)
 
