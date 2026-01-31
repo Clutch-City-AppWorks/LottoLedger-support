@@ -96,12 +96,11 @@ Because all data is stored locally on your device:
 
 ## Open Source
 
-LottoLedger is open source software released under the MIT License. You can:
-- Review the complete source code at: [https://github.com/ishirley34/LottoLedger-ios](https://github.com/ishirley34/LottoLedger-ios)
-- Verify that we collect no data
-- Audit our privacy practices
-- Contribute improvements
-- Fork and modify the code
+LottoLedger is open source software released under the MIT License. The source code is maintained in a private repository.
+
+You can verify our privacy practices and audit the implementation by:
+- Reviewing the privacy policy documentation in this repository
+- Contacting the development team through the support channels
 
 ## App Store Privacy Questions
 
@@ -147,8 +146,8 @@ While we take your privacy seriously, please also note:
 
 If you have questions about this privacy policy or LottoLedger:
 
-- **GitHub Issues**: [https://github.com/ishirley34/LottoLedger-ios/issues](https://github.com/ishirley34/LottoLedger-ios/issues)
-- **Repository**: [https://github.com/ishirley34/LottoLedger-ios](https://github.com/ishirley34/LottoLedger-ios)
+- **GitHub Issues**: [https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues](https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues)
+- **Support Repository**: [https://github.com/Clutch-City-AppWorks/LottoLedger-support](https://github.com/Clutch-City-AppWorks/LottoLedger-support)
 
 ## Summary
 
