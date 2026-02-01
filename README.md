@@ -141,7 +141,7 @@ The site's base path is configured through the `VITE_BASE` environment variable 
 - Site deploys to: `https://<orgname>.github.io/<repo-name>/`
 - Set `VITE_BASE=/<repo-name>/` in the workflow file
 
-The current configuration in `.github/workflows/deploy-pages.yml` uses `VITE_BASE=/`, which is appropriate for an organization site.
+For this repository (`LottoLedger-support`), which is a project site, the GitHub Pages workflow should set `VITE_BASE=/LottoLedger-support/`. If you instead rename the repository to `Clutch-City-AppWorks.github.io` to host it as an organization site, then `VITE_BASE=/` is appropriate.
 
 ### Custom Domain Setup
 
@@ -175,7 +175,7 @@ npm install
 npm run build
 
 # Deploy to gh-pages branch (requires gh-pages to be installed)
-npm run deploy
+npm run deploy:manual
 ```
 
 Note: Manual deployment requires the `gh-pages` package, which is included in `devDependencies`.
