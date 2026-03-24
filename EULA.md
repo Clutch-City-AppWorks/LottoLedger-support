@@ -98,7 +98,13 @@ We reserve the right to terminate your license and access to the App at any time
 
 ---
 
-## 12. CONTACT AND SUPPORT
+## 12. CONFLICT WITH TERMS OF SERVICE
+
+If there is any conflict between this EULA and the Terms of Service for LottoLedger, the Terms of Service shall control to the extent of the conflict, unless otherwise required by applicable law or platform terms (e.g., Apple Media Services Terms or Google Play Developer Distribution Agreement).
+
+---
+
+## 13. CONTACT AND SUPPORT
 For legal documentation, bug reports, or enhancement requests, visit our support repository:
 **GitHub:** [https://github.com/Clutch-City-AppWorks/LottoLedger-support](https://github.com/Clutch-City-AppWorks/LottoLedger-support)
 
