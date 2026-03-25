@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Center – Clutch City AppWorks</title>
+  <meta name="description" content="All legal documents for Clutch City AppWorks LLC and the LottoLedger app." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #e03030;
+      --red-dark: #b91c1c;
+      --cyan: #22d3ee;
+      --cyan-dark: #06b6d4;
+      --emerald: #34d399;
+      --green: #22c55e;
+      --bg-950: #030712;
+      --bg-900: #111827;
+      --bg-800: #1f2937;
+      --bg-700: #374151;
+      --text-white: #f9fafb;
+      --text-gray-200: #d1d5db;
+      --text-gray-300: #9ca3af;
+      --text-gray-400: #6b7280;
+      --text-gray-500: #4b5563;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom, var(--bg-950), var(--bg-900), var(--bg-950));
+      min-height: 100vh;
+      color: var(--text-white);
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(3,7,18,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--bg-700);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.5);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-white);
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .brand img { width: 36px; height: 36px; object-fit: contain; border-radius: 6px; }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-gray-300);
+      font-size: 0.875rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .home-link:hover { color: var(--text-white); }
+
+    /* ── Main ── */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .hero-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--red), var(--red-dark));
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 32px rgba(224,48,48,0.35);
+    }
+
+    .hero-icon svg { width: 40px; height: 40px; color: #fff; stroke: #fff; }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #fff, #9ca3af);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-gray-300);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── Section ── */
+    .section { margin-bottom: 56px; }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .section-line { flex: 1; height: 1px; }
+    .section-line.red { background: linear-gradient(to right, rgba(224,48,48,0.5), transparent); }
+    .section-line.red-rev { background: linear-gradient(to left, rgba(224,48,48,0.5), transparent); }
+    .section-line.emerald { background: linear-gradient(to right, rgba(52,211,153,0.5), transparent); }
+    .section-line.emerald-rev { background: linear-gradient(to left, rgba(52,211,153,0.5), transparent); }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title svg { width: 22px; height: 22px; }
+    .section-title.red svg { color: var(--red); stroke: var(--red); }
+    .section-title.emerald svg { color: var(--emerald); stroke: var(--emerald); }
+
+    /* ── Grid ── */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+
+    /* ── Card ── */
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background: linear-gradient(135deg, var(--bg-800), var(--bg-900));
+      border: 1px solid var(--bg-700);
+      border-radius: 14px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      border-color: var(--text-gray-400);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .card-icon svg { width: 26px; height: 26px; stroke: #fff; }
+    .card-icon.red { background: linear-gradient(135deg, var(--red), var(--red-dark)); }
+    .card-icon.cyan { background: linear-gradient(135deg, #06b6d4, #2563eb); }
+    .card-icon.emerald { background: linear-gradient(135deg, var(--emerald), #16a34a); }
+    .card-icon.green { background: linear-gradient(135deg, var(--green), #15803d); }
+
+    .card-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+      border: 1px solid;
+    }
+
+    .badge-red { background: rgba(153,27,27,0.35); color: #fca5a5; border-color: rgba(185,28,28,0.6); }
+    .badge-cyan { background: rgba(8,145,178,0.2); color: #67e8f9; border-color: rgba(14,165,233,0.4); }
+    .badge-emerald { background: rgba(6,95,70,0.3); color: #6ee7b7; border-color: rgba(52,211,153,0.4); }
+    .badge-green { background: rgba(20,83,45,0.3); color: #86efac; border-color: rgba(34,197,94,0.4); }
+
+    .card-body { flex: 1; }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 6px;
+      transition: color 0.2s;
+    }
+
+    .card:hover .card-title { color: var(--cyan); }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--text-gray-300);
+      line-height: 1.55;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+    }
+
+    .card-updated { font-size: 0.75rem; color: var(--text-gray-400); }
+
+    .card-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--cyan);
+      transition: gap 0.2s;
+    }
+
+    .card:hover .card-cta { gap: 8px; }
+    .card-cta svg { width: 14px; height: 14px; stroke: currentColor; }
+
+    /* ── Footer ── */
+    .page-footer {
+      text-align: center;
+      border-top: 1px solid var(--bg-700);
+      padding-top: 32px;
+      color: var(--text-gray-400);
+      font-size: 0.875rem;
+    }
+
+    .page-footer a { color: var(--cyan); text-decoration: none; transition: color 0.2s; }
+    .page-footer a:hover { color: var(--cyan-dark); text-decoration: underline; }
+    .page-footer p + p { margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="https://clutchcityappworks.com" class="brand">
+        <img src="https://clutchcityappworks.com/logo.png" alt="Clutch City AppWorks logo" />
+        Clutch City AppWorks
+      </a>
+      <a href="https://clutchcityappworks.com" class="home-link">
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        Home
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+        </svg>
+      </div>
+      <h1>Legal Center</h1>
+      <p>All legal documents for Clutch City AppWorks LLC and the LottoLedger app. Select a document below to read the full text.</p>
+    </div>
+
+    <!-- Website Legal -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-line red"></div>
+        <h2 class="section-title red">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+          </svg>
+          Website Legal
+        </h2>
+        <div class="section-line red-rev"></div>
+      </div>
+
+      <div class="grid-2">
+
+        <a href="https://clutchcityappworks.com/privacy-policy" class="card">
+          <div class="card-top">
+            <div class="card-icon red">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <span class="card-badge badge-red">Website</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Website Privacy Policy</div>
+            <div class="card-desc">How we collect, use, and protect data on clutchcityappworks.com.</div>
+          </div>
+          <div class="card-footer">
+            <span class="card-updated">Updated: March 23, 2026</span>
+            <span class="card-cta">View <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="https://clutchcityappworks.com/terms-of-use" class="card">
+          <div class="card-top">
+            <div class="card-icon red">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <span class="card-badge badge-red">Website</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Website Terms of Use</div>
+            <div class="card-desc">Governing terms for accessing and using this website.</div>
+          </div>
+          <div class="card-footer">
+            <span class="card-updated">Updated: March 24, 2026 · v1.2</span>
+            <span class="card-cta">View <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- LottoLedger App Legal -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-line emerald"></div>
+        <h2 class="section-title emerald">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+          LottoLedger App Legal
+        </h2>
+        <div class="section-line emerald-rev"></div>
+      </div>
+
+      <div class="grid-3">
+
+        <a href="https://clutchcityappworks.com/lottoledger/terms" class="card">
+          <div class="card-top">
+            <div class="card-icon emerald">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <span class="card-badge badge-emerald">iOS &amp; Android</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Terms of Service</div>
+            <div class="card-desc">Terms governing the use of the LottoLedger app on iOS and Android.</div>
+          </div>
+          <div class="card-footer">
+            <span class="card-updated">March 24, 2026 · v1.3</span>
+            <span class="card-cta">View <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="https://clutchcityappworks.com/lottoledger/privacy-ios" class="card">
+          <div class="card-top">
+            <div class="card-icon cyan">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <span class="card-badge badge-cyan">iOS</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Privacy Policy (iOS)</div>
+            <div class="card-desc">Data practices for LottoLedger on iOS — what is collected, stored, and how it is used.</div>
+          </div>
+          <div class="card-footer">
+            <span class="card-updated">March 24, 2026 · v1.3</span>
+            <span class="card-cta">View <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="https://clutchcityappworks.com/lottoledger/privacy-android" class="card">
+          <div class="card-top">
+            <div class="card-icon green">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <span class="card-badge badge-green">Android</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Privacy Policy (Android)</div>
+            <div class="card-desc">Data practices for LottoLedger on Android — what is collected, stored, and how it is used.</div>
+          </div>
+          <div class="card-footer">
+            <span class="card-updated">March 24, 2026 · v1.3</span>
+            <span class="card-cta">View <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="https://clutchcityappworks.com/lottoledger/eula-ios" class="card">
+          <div class="card-top">
+            <div class="card-icon cyan">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <span class="card-badge badge-cyan">iOS</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">EULA (iOS)</div>
+            <div class="card-desc">End User License Agreement for LottoLedger distributed via the Apple App Store.</div>
+          </div>
+          <div class="card-footer">
+            <span class="card-updated">March 24, 2026 · v1.3</span>
+            <span class="card-cta">View <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="https://clutchcityappworks.com/lottoledger/eula-android" class="card">
+          <div class="card-top">
+            <div class="card-icon green">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <span class="card-badge badge-green">Android</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">EULA (Android)</div>
+            <div class="card-desc">End User License Agreement for LottoLedger distributed via Google Play.</div>
+          </div>
+          <div class="card-footer">
+            <span class="card-updated">March 24, 2026 · v1.3</span>
+            <span class="card-cta">View <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Footer note -->
+    <div class="page-footer">
+      <p>Questions about our legal documents? <a href="mailto:info@clutchcityappworks.com">Contact us</a>.</p>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Clutch City AppWorks LLC. All rights reserved.</p>
+    </div>
+
+  </main>
+
+</body>
+</html>
