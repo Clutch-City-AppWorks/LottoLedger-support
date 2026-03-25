@@ -4,11 +4,16 @@ This repository contains the public-facing support documentation and issue track
 
 ## Legal Documents
 
-- [EULA (iOS)](./EULA.md) — End User License Agreement for the iOS app (v1.3)
-- [EULA (Android)](./EULA-Android.md) — End User License Agreement for the Android app (v1.3)
-- [Privacy Policy (iOS)](./PrivacyPolicy.md) — Privacy Policy for the iOS app (v1.2)
-- [Privacy Policy (Android)](./PrivacyPolicy-Android.md) — Privacy Policy for the Android app (v1.2)
-- [Terms of Service](./TERMS_OF_SERVICE.md) — Terms of Service for LottoLedger (v1.3)
+### App Documents
+- [EULA-iOS.md](./EULA-iOS.md) — End User License Agreement for the iOS app (v1.3)
+- [EULA-Android.md](./EULA-Android.md) — End User License Agreement for the Android app (v1.3)
+- [PrivacyPolicy-iOS.md](./PrivacyPolicy-iOS.md) — Privacy Policy for the iOS app (v1.2)
+- [PrivacyPolicy-Android.md](./PrivacyPolicy-Android.md) — Privacy Policy for the Android app (v1.2)
+- [TERMS_OF_SERVICE.md](./TERMS_OF_SERVICE.md) — Terms of Service for LottoLedger (v1.3)
+
+### Website Documents
+- [PrivacyPolicy-Web.md](./PrivacyPolicy-Web.md) — Privacy Policy for clutchcityappworks.com (v1.2)
+- [TermsOfUse-Web.md](./TermsOfUse-Web.md) — Terms of Use for clutchcityappworks.com (v1.2)
 
 Purpose
 - Provide a single, public place for users to ask questions, report problems, and get help.
