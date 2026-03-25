@@ -1,6 +1,6 @@
 # Support for LottoLedger
 
-This repository contains the public-facing support documentation and issue tracker for LottoLedger — available on iOS and Android. The application source code and private development artifacts are kept in separate private repositories.
+This repository contains the public-facing support documentation and issue tracker for LottoLedger — available on iOS and Android.
 
 ## Legal Documents
 
@@ -82,8 +82,7 @@ Triage and response expectations
 
 How we use the public issue tracker
 - Public issues are used for end-user support, bug reports, feature requests, and community discussion.
-- We will not publish private source code, internal backlog items, or CI logs from the private repo in public issues.
-- When linking between this support repo and the private code repo, some references (commits, PRs) will be redacted for users who do not have access.
+- We will not publish private source code or internal backlog items in public issues.
 
 Private support and escalation
 - For private troubleshooting (sensitive logs, account details), open a public issue describing the problem (without private data) and request private support. We’ll respond with a secure intake method (email or private file transfer).
@@ -91,7 +90,7 @@ Private support and escalation
 
 Contributing to support content
 - If you want to improve docs, FAQs, or troubleshooting guides in this repository, submit a pull request to this public repo.
-- For code contributions, open a pull request in the private repo per the contributor guidance (if you have access), or request guidance via a public issue.
+- For code contribution inquiries, open a public issue requesting guidance.
 
 Labels and issue workflow (maintainers)
 - Labels we commonly apply:
@@ -105,7 +104,7 @@ Labels and issue workflow (maintainers)
   1. New issue created → auto/triage review
   2. Ask for more info if necessary (needs-info)
   3. Reproduce & assign to an owner
-  4. Fix in private repo, create a public-friendly summary and close/resolve the issue
+  4. Fix the issue, create a public-friendly summary and close/resolve the issue
 
 Common support topics & quick troubleshooting
 - App crashes: include device, OS, app version, and crash log.
@@ -115,10 +114,8 @@ Common support topics & quick troubleshooting
 
 Helpful links
 - Developer website: https://clutchcityappworks.com
-- iOS source (private): https://github.com/Clutch-City-AppWorks/LottoLedger-ios
-- Android source (private): https://github.com/Clutch-City-AppWorks/LottoLedger-android
 - Support issues (this repo): https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues
-- CONTRIBUTING (if maintained here): see this repository's CONTRIBUTING.md
+- CONTRIBUTING: see this repository's CONTRIBUTING.md
 
 Contact / maintainers
 - Developer: Clutch City AppWorks LLC — Montgomery County, Texas 77386
