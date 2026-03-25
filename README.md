@@ -1,6 +1,14 @@
 # Support for LottoLedger
 
-This repository (LottoLedger-ios) contains the public-facing support docs and issue tracker for the LottoLedger iOS project. The application source code and private development artifacts are kept in a separate private repository: [LottoLedger-ios (private)](https://github.com/ishirley34/LottoLedger-ios).
+This repository contains the public-facing support documentation and issue tracker for LottoLedger — available on iOS and Android. The application source code and private development artifacts are kept in separate private repositories.
+
+## Legal Documents
+
+- [EULA (iOS)](./EULA.md) — End User License Agreement for the iOS app (v1.3)
+- [EULA (Android)](./EULA-Android.md) — End User License Agreement for the Android app (v1.3)
+- [Privacy Policy (iOS)](./PrivacyPolicy.md) — Privacy Policy for the iOS app (v1.2)
+- [Privacy Policy (Android)](./PrivacyPolicy-Android.md) — Privacy Policy for the Android app (v1.2)
+- [Terms of Service](./TERMS_OF_SERVICE.md) — Terms of Service for LottoLedger (v1.3)
 
 Purpose
 - Provide a single, public place for users to ask questions, report problems, and get help.
@@ -8,8 +16,8 @@ Purpose
 - Document how to get help, what information to include, and how to request private help when necessary.
 
 Where to get help
-- Public issues (preferred): Open an issue in this repository’s Issues tab: https://github.com/ishirley34/lottoledger-support/issues
-- Email (private): If you must share logs or data that cannot be posted publicly, email hazzaadev@gmail.com and reference the issue number (if any).
+- Public issues (preferred): Open an issue in this repository's Issues tab: https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues
+- Email (private): If you must share logs or data that cannot be posted publicly, email support@clutchcityappworks.com and reference the issue number (if any).
 - For urgent security vulnerabilities: see the "Security / Vulnerability reports" section below.
 
 How to open a useful support issue
@@ -22,8 +30,8 @@ When opening an issue include:
 2. Steps to reproduce (exact taps, screens, or code paths)
 3. Expected behavior vs. actual behavior
 4. App version and build number (from the app's About or Settings)
-5. Device model and OS version (e.g., iPhone 12, iOS 17.1)
-6. Relevant account type / configuration (if applicable)
+5. Device model and OS version (e.g., iPhone 15, iOS 18.2 or Pixel 8, Android 15)
+6. Platform (iOS or Android)
 7. Minimal reproducible example, if possible
 8. Screenshots, screen recordings, and logs (paste logs inline or attach as files)
 9. Any network requests or API responses (redact secrets — see below)
@@ -51,7 +59,7 @@ Privacy and sensitive data
 
 Security / Vulnerability reports
 - Do NOT post security vulnerabilities in public issues.
-- To report a security vulnerability, email hazzaadev@gmail.com with:
+- To report a security vulnerability, email support@clutchcityappworks.com with:
   - Short description of the issue
   - Reproduction steps (or PoC), if possible
   - Your preferred secure contact method
@@ -101,14 +109,16 @@ Common support topics & quick troubleshooting
 - Login/auth issues: include exact error text and the time you attempted the login.
 
 Helpful links
-- Private project repository (source code): [LottoLedger-ios (private)](https://github.com/ishirley34/LottoLedger-ios)
-- Support issues (this repo): https://github.com/ishirley34/lottoledger-support/issues
+- Developer website: https://clutchcityappworks.com
+- iOS source (private): https://github.com/Clutch-City-AppWorks/LottoLedger-ios
+- Android source (private): https://github.com/Clutch-City-AppWorks/LottoLedger-android
+- Support issues (this repo): https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues
 - CONTRIBUTING (if maintained here): see this repository's CONTRIBUTING.md
 
 Contact / maintainers
-- Primary maintainers: LottoLedger Team (ishirley34)
-- Public support issues: https://github.com/ishirley34/lottoledger-support/issues
-- Private contact / escalation: hazzaadev@gmail.com
-- Security reports: hazzaadev@gmail.com
+- Developer: Clutch City AppWorks LLC — Montgomery County, Texas 77386
+- Public support issues: https://github.com/Clutch-City-AppWorks/LottoLedger-support/issues
+- Email: support@clutchcityappworks.com
+- Security reports: support@clutchcityappworks.com
 
 Thanks for helping make LottoLedger better — we appreciate clear bug reports and thoughtful feedback.

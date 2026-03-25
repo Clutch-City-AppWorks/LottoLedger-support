@@ -1,35 +1,35 @@
-End User License Agreement (EULA) for LottoLedger (iOS)
+End User License Agreement (EULA) for LottoLedger (Android)
 
 Effective Date: March 24, 2026
-Version: 1.3 
+Version: 1.3
 Developer: Clutch City AppWorks LLC
 
 
-1. AGREEMENT OVERVIEW & ACKNOWLEDGMENT
+1. AGREEMENT OVERVIEW
 
-This End User License Agreement ("EULA") is a legal agreement between you and Clutch City AppWorks LLC ("we," "us," "our") for the LottoLedger mobile application ("the App") distributed via the iOS App Store.
+This End User License Agreement ("EULA") is a legal agreement between you and Clutch City AppWorks LLC ("we," "us," "our") for the LottoLedger mobile application ("the App") distributed via Google Play.
 
 By installing or using the App, you agree to be bound by this EULA. If you do not agree, you must not install or use the App.
 
-This EULA is concluded between you and Clutch City AppWorks LLC only, and not with Apple Inc. ("Apple"). Clutch City AppWorks LLC, not Apple, is solely responsible for the App and the content thereof.
+This EULA is solely between you and Clutch City AppWorks LLC. Google LLC ("Google") is not a party to this EULA and has no responsibility for the App or this EULA.
 
-Your use of the App must also comply with the Apple Media Services Terms and Conditions and any applicable App Store usage rules. If there is any conflict between this EULA and those Apple terms, the Apple terms will control to the extent of the conflict.
+Your use of the App must comply with the Google Play Terms of Service and any Google Play policies applicable to users. If there is any conflict between this EULA and those Google terms, the Google terms will control to the extent of the conflict.
 
 Conflict with Terms of Service
-If there is any conflict between this EULA and the Terms of Service for LottoLedger, the Terms of Service shall control to the extent of the conflict, unless otherwise required by applicable law or by the Apple Media Services Terms and Conditions.
+If there is any conflict between this EULA and the Terms of Service for LottoLedger, the Terms of Service shall control to the extent of the conflict, unless otherwise required by applicable law or by the Google Play Developer Distribution Agreement.
 
 Age Requirement
 By using the App, you represent that you are at least 18 years of age (or the age of majority in your jurisdiction, if higher). If you are under 18, you must cease use immediately.
 
 IF YOU DO NOT AGREE TO THIS EULA, OR IF YOU ARE UNDER THE AGE OF 18, DO NOT INSTALL OR USE THE APP.
 
-Your use of the App is also subject to our Privacy Policy, available at: https://www.clutchcityappworks.com/lottoledger/privacy-ios
+Your use of the App is also subject to our Privacy Policy, available at: https://www.clutchcityappworks.com/lottoledger/privacy-android
 
 
-2. GRANT OF LICENSE (APPLE DEVICES)
+2. GRANT OF LICENSE (ANDROID DEVICES)
 
 2.1 License Scope
-Subject to your compliance with this EULA, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App on any Apple-branded products that you own or control and as permitted by the usage rules set forth in the Apple Media Services Terms and Conditions and the App Store Terms of Service. This license is granted only for use in the countries or territories where the App is made available through the App Store.
+Subject to your compliance with this EULA, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use one copy of the App on a device that you own or control and that runs a validly licensed copy of the Android operating system. This license is granted only for personal, non-commercial use, unless we expressly authorize other uses in writing.
 
 2.2 License Restrictions
 You may NOT:
@@ -43,19 +43,19 @@ You may NOT:
 3. MAINTENANCE, SUPPORT, AND CLAIMS
 
 Maintenance and Support
-Clutch City AppWorks LLC is solely responsible for providing any maintenance and support services for the App as required under applicable law and as described in this EULA or our support documentation. Apple has no obligation whatsoever to furnish any maintenance or support services.
+Clutch City AppWorks LLC is solely responsible for providing any maintenance and support services for the App as required under applicable law and as described in this EULA or our support documentation. Google has no obligation to provide any maintenance or support for the App.
 
 Product Claims
-You acknowledge that Clutch City AppWorks LLC, not Apple, is responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App, including but not limited to product liability claims and claims relating to legal/regulatory non-compliance or consumer protection.
+You acknowledge that Clutch City AppWorks LLC, not Google, is responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App, including but not limited to product liability claims and claims under consumer protection, privacy, or similar legislation.
 
 
 4. INTELLECTUAL PROPERTY & OWNERSHIP
 
-The App, including its user interface, design, features, algorithms, code, and the "LottoLedger" brand, are the exclusive property of Clutch City AppWorks LLC or its licensors and are protected by copyright, trademark, and other intellectual property laws. The App is licensed, not sold, to you under this EULA. No license is granted to the App's source code, which remains proprietary and private.
+The App, including its user interface, design, features, algorithms, code, and the "LottoLedger" brand, are the exclusive property of Clutch City AppWorks LLC or its licensors, and are protected by copyright, trademark, and other intellectual property laws. The App is licensed, not sold, to you under this EULA. No license is granted to the App's source code, which remains proprietary and private.
 
 If the App allows you to submit or store content (such as notes or ticket entries), you retain any rights you have in that content. You grant us a limited, non-exclusive, worldwide, royalty-free license to use that content solely to operate, provide, and improve the App.
 
-In the event of any third-party claim that the App or your possession and use of the App infringes intellectual property rights, Clutch City AppWorks LLC, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of any such claim.
+In the event of any third-party claim that the App or your possession and use of the App infringes intellectual property rights, Clutch City AppWorks LLC will be solely responsible for the investigation, defense, settlement, and discharge of any such claim.
 
 
 5. BINDING ARBITRATION AND CLASS ACTION WAIVER
@@ -102,31 +102,22 @@ You represent and warrant that:
 You agree to comply with all applicable laws and regulations in connection with your use of the App.
 
 
-8. TEXAS REGULATORY DISCLOSURES
+8. THIRD-PARTY BENEFICIARY
 
-Age-Related Access
-To the extent required by Texas law and supported by app store platforms, we rely on age-related information or signals provided by the App Store to help restrict access to adult audiences in Texas. We do not independently verify your age and instead rely on the App Store's age verification and parental-consent processes where applicable.
-
-Texas Data Privacy and Security Act (TDPSA)
-We strive to comply with the Texas Data Privacy and Security Act. As described in our Privacy Policy, we do not sell your personal data as that term is defined under applicable Texas law.
+You and Clutch City AppWorks LLC acknowledge and agree that Google and its affiliated companies are third-party beneficiaries of this EULA. Upon your acceptance of this EULA, Google will have the right (and will be deemed to have accepted the right), to the extent applicable, to enforce this EULA against you as a third-party beneficiary thereof.
 
 
-9. THIRD-PARTY BENEFICIARY
-
-You and Clutch City AppWorks LLC acknowledge and agree that Apple and Apple's subsidiaries are third-party beneficiaries of this EULA. Upon your acceptance of this EULA, Apple will have the right (and will be deemed to have accepted the right), to the extent applicable, to enforce this EULA against you as a third-party beneficiary.
-
-
-10. NO GAMBLING SERVICES
+9. NO GAMBLING SERVICES
 
 The App does not accept wagers, process payments for lottery tickets, or facilitate real-money gambling. The App is not a lottery operator, agent, or reseller and does not issue, sell, or validate lottery tickets. All lottery participation, if any, occurs outside the App through official lottery channels.
 
 
-11. USER RESPONSIBILITIES
+10. USER RESPONSIBILITIES
 
 You are solely responsible for verifying all drawing results with official lottery sources, checking tickets through official channels, and complying with all lottery laws in your jurisdiction. You understand and agree that the App may contain errors or omissions and that you should always rely on official sources for final results and prize claims.
 
 
-12. INDEMNIFICATION
+11. INDEMNIFICATION
 
 To the fullest extent permitted by law, you agree to indemnify, defend, and hold harmless Clutch City AppWorks LLC, its owners, officers, employees, contractors, and agents from and against any and all claims, demands, actions, damages, obligations, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:
 
@@ -137,7 +128,7 @@ To the fullest extent permitted by law, you agree to indemnify, defend, and hold
 This indemnity obligation will survive termination of this EULA and your use of the App.
 
 
-13. MODIFICATIONS AND TERMINATION
+12. MODIFICATIONS AND TERMINATION
 
 We may modify this EULA from time to time. If we make material changes, we will provide notice by updating the "Effective Date" above and, where reasonable, by providing notice within the App or through other appropriate means. Changes will apply prospectively from the effective date indicated.
 
@@ -146,7 +137,7 @@ If you do not agree to the updated EULA, you must stop using and uninstall the A
 We reserve the right to suspend or terminate your license to use the App at any time if you violate this EULA or use the App in a manner that we reasonably believe may cause harm or liability to us, other users, or any third party.
 
 
-14. RESPONSIBLE GAMING
+13. RESPONSIBLE GAMING
 
 Lottery and other games of chance involve financial risk. To promote responsible play, we recommend that you:
 
@@ -161,7 +152,7 @@ If you have a gambling problem or are concerned about your gambling behavior, se
 - Gamblers Anonymous: https://www.gamblersanonymous.org
 
 
-15. CONTACT AND SUPPORT
+14. CONTACT AND SUPPORT
 
 Clutch City AppWorks LLC
 Montgomery County, TX 77386
@@ -179,6 +170,6 @@ BY INSTALLING OR USING THIS APP, YOU ACKNOWLEDGE THAT:
 - You understand that lottery play involves financial risk and negative expected value.
 - You understand that the App provides no guarantee of winnings and does not change the odds of any lottery game.
 - You are at least 18 years of age (or the age of majority in your jurisdiction, if higher).
-- This agreement is between you and Clutch City AppWorks LLC, not Apple.
+- This agreement is between you and Clutch City AppWorks LLC, not Google.
 
 © 2026 Clutch City AppWorks LLC. All rights reserved.

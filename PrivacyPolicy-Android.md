@@ -1,16 +1,16 @@
-Privacy Policy for LottoLedger (iOS)
+Privacy Policy for LottoLedger (Android)
 Effective Date: March 24, 2026
-Version: 1.2 (iOS)
+Version: 1.2 (Android)
 Developer: Clutch City AppWorks LLC
 
 
 1. Overview
 
-LottoLedger is an iOS lottery companion app that helps you generate lottery tickets using structured randomness, track drawings, compare results, and analyze performance history. We are committed to protecting your privacy and being transparent about how user data is collected and used.
+LottoLedger is an Android lottery companion app that helps you generate lottery tickets using structured randomness, track drawings, compare results, and analyze performance history. We are committed to protecting your privacy and being transparent about how user data is collected and used.
 
 LottoLedger uses Google AdMob to display in-app advertisements in the free tier of the app. This policy explains how information is collected and used in connection with the app and those ads, and your privacy rights.
 
-If there is any conflict between this Privacy Policy and the Terms of Service for LottoLedger, the Terms of Service shall apply to the extent of the conflict, except where required otherwise by applicable law or platform terms (e.g., Apple Media Services Terms).
+If there is any conflict between this Privacy Policy and the Terms of Service for LottoLedger, the Terms of Service shall apply to the extent of the conflict, except where required otherwise by applicable law or platform terms (e.g., Google Play Developer Distribution Agreement).
 
 
 2. What LottoLedger Does
@@ -24,7 +24,7 @@ LottoLedger helps you:
 - View statistics and performance reports.
 - Understand lottery odds and probabilities.
 
-The app is designed to keep as much data as possible on your device and does not require an account or login to use.
+The app is designed to keep as much data as possible on your device and does not require an account or login to function.
 
 
 3. Data Collection
@@ -33,7 +33,7 @@ To operate the app and serve ads, we or our third-party partners may collect cer
 
 App-Level Data Collected
 
-- Device identifiers: Technical identifiers such as the Identifier for Advertisers (IDFA) or other temporary device identifiers may be accessed by the Google Mobile Ads SDK for ad-related purposes.
+- Device identifiers: Technical identifiers such as the Android Advertising ID (AAID) or similar may be accessed by the Google Mobile Ads SDK for ad-related purposes.
 - Advertising and usage data: When AdMob is used, Google may collect data such as your interactions with ads, approximate device location, and general usage patterns for advertising and analytics.
 - Crash, performance, and diagnostics data: The Google Mobile Ads SDK may collect limited technical data (e.g., crash logs, performance metrics) to help improve ad delivery and stability.
 
@@ -53,7 +53,7 @@ The information collected by LottoLedger and the Google AdMob SDK is used for th
 - Displaying in-app advertisements: To show ads within the free tier of the app, including personalized or non-personalized ads depending on your choices and applicable laws.
 - Improving ad performance and reliability: To optimize ad delivery, fill rate, and technical performance of the advertising SDK.
 - App and device analytics (limited): To understand how ads are shown and interacted with, and to monitor general app stability and performance.
-- Compliance with legal and platform requirements: To comply with Apple’s App Store privacy disclosures, Google’s AdMob policies, and applicable privacy laws such as GDPR, CCPA, TDPSA, and others.
+- Compliance with legal and platform requirements: To comply with Google Play policies, Google’s AdMob policies, and applicable privacy laws such as GDPR, CCPA, TDPSA, and others.
 
 We do not use collected data for purposes unrelated to running the app and serving ads (for example, we do not merge or combine this data with external profiles or use it for unrelated marketing campaigns).
 
@@ -63,8 +63,8 @@ We do not use collected data for purposes unrelated to running the app and servi
 Google AdMob (Mobile Ads SDK)
 
 - LottoLedger uses Google AdMob as a third-party advertising network. The Google Mobile Ads SDK may transmit certain device and interaction data to Google for ad-related purposes.
-- These data may be linked to an advertising identifier and may be used for targeted or interest-based advertising, depending on your permissions and applicable laws.
-- You can control certain data-sharing and targeting preferences through your device settings and, where required, via the App Tracking Transparency prompt or Google’s advertising-choice tools.
+- These data may be linked to your Android Advertising ID and may be used for targeted or interest-based advertising, depending on your permissions and applicable laws.
+- You can control certain data-sharing and targeting preferences through your device settings (for example, resetting or disabling your advertising ID, limiting ad personalization, or using Google’s advertising-choice tools).
 
 Other services
 
@@ -72,19 +72,19 @@ Other services
   - Analytics services (no separate Google Analytics or Firebase analytics).
   - Social media platforms.
   - Cloud storage or cloud-synchronization services.
-  - Payment processors within the app (other than standard App Store in-app-purchase plumbing, if any).
+  - Payment processors within the app (other than standard Google Play billing plumbing, if any).
   - Additional third-party SDKs beyond what is required by the operating system or AdMob.
 
 
-6. App Store Privacy Labels and Apple’s Requirements
+6. Google Play Data Safety and Policies
 
-When you publish LottoLedger on the App Store, you must disclose any data collection and use in the App Store Connect “App Privacy” section. This includes:
+When you publish LottoLedger on Google Play, you must complete the Data Safety section in the Play Console, which describes:
 
-- Data types collected (such as device identifiers, product interaction, and diagnostics).
-- Purposes for which data is used (e.g., Third-Party Advertising, Analytics, Product Personalization).
-- Whether data is linked to identifiers and whether it is used for tracking, as defined by Apple.
+- The categories of data collected (such as device or advertising identifiers, approximate location, etc.).
+- How that data is collected and shared.
+- Whether data is used for purposes such as “Personalized Ads” or “User-Facing Features.”
 
-The information in this privacy policy is intended to align with those disclosures so that your App Store privacy labels accurately reflect LottoLedger’s data practices.
+This privacy policy is intended to be consistent with your Google Play Data Safety disclosures. Any changes to data-collection practices must be reflected both in this policy and in the Data Safety form.
 
 
 7. Your Privacy Rights
@@ -103,11 +103,11 @@ These rights may include:
 - The right to opt out of targeted advertising or the sale/sharing of personal data (where applicable).
 - The right to data portability and, in some cases, the right to rectify inaccurate data.
 
-Because LottoLedger’s data processing is primarily delegated to Google AdMob and governed by its own policies and notices, requests involving ad-related data are typically handled by Google or via your device-level choices (for example, resetting your advertising identifier, disabling ad-personalization, or using Google’s ad-choices tools).
+Because LottoLedger’s data processing is primarily delegated to Google AdMob and governed by its own policies and notices, requests involving ad-related data are typically handled by Google or via your device-level choices (for example, resetting your advertising ID, disabling ad-personalization, or using Google’s ad-choices tools).
 
 To exercise your rights with respect to LottoLedger:
 
-- Use your device’s privacy and ad-related settings (e.g., “Limit Ad Tracking,” “Opt-out of Interest-based Ads,” or similar).
+- Use your device’s privacy and ad-related settings (e.g., “Reset advertising ID,” “Do not personalize ads,” or similar).
 - If you have questions specific to how LottoLedger handles your data or to send a data-subject-request, you can contact us as described in Section 9.
 
 We will respond to verified requests within the time frame required by applicable law and may ask for information necessary to confirm your identity and residency.
@@ -132,7 +132,7 @@ If you have questions about this privacy policy, data-handling practices, or tec
 
 10. Changes to This Policy
 
-We may update this Privacy Policy from time to time. When we make material changes, we will update the "Effective Date" at the top of this page and, where practicable, provide notice within the app or on the App Store description.
+We may update this Privacy Policy from time to time. When we make material changes, we will update the "Effective Date" at the top of this page and, where practicable, provide notice within the app or on the Google Play listing.
 
 Your continued use of LottoLedger after any changes become effective means you accept the updated Privacy Policy.
 
@@ -141,4 +141,4 @@ Your continued use of LottoLedger after any changes become effective means you a
 
 LottoLedger is designed to keep most user data on your device. However, in the free tier, the app uses Google AdMob to display in-app advertisements, which may result in the collection and processing of certain device and advertising data by Google for ad-related purposes.
 
-We do not collect or store names, contact information, or other highly sensitive personal data beyond what is necessary to run the app and comply with Apple’s and Google’s requirements. You retain control over your privacy through device-level settings and, where applicable, your right to manage or opt out of targeted advertising.
+We do not collect or store names, contact information, or other highly sensitive personal data beyond what is necessary to run the app and comply with Google Play and Google AdMob requirements. You retain control over your privacy through device-level settings and, where applicable, your right to manage or opt out of targeted advertising.
